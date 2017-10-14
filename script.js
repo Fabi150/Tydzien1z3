@@ -7,13 +7,20 @@
 		
 		h_button.on("click", function(){
 			
-			menu.slideToggle();
+//			menu.slideToggle();
 			
-//			if(menu.is(":hidden")){
-//				menu.slideDown();
-//			}else {
-//				menu.slideUp();
-//			}
+			if(menu.is(":hidden")){
+				menu.slideDown(300, function(){
+					menu.animate({
+						opacity:1,
+					});
+				});
+			}else {
+				menu.animate({
+					opacity:0,
+				}).slideUp();
+				
+			}
 			
 		});
 		
