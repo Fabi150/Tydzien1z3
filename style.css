@@ -1,0 +1,40 @@
+/* CSS Document */
+body {
+	width: 800px;
+	margin: 10px auto;
+	background-color: darkgrey;
+}
+
+#nav {
+	width: 100%;
+	height: auto;
+	background-color: #222222;
+	display: none;
+	color: white;
+	margin: 2px 0;
+	padding: 2px;
+}
+
+#nav ul li{
+	
+	display: inline;
+	padding: 3px 15px;
+	
+}
+
+#hamburger-menu {
+	display: inline-block;
+    cursor: pointer;
+}
+
+#hamburger-menu div {
+	width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+body img {
+	width: 600px;
+}
