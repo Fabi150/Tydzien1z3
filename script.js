@@ -10,13 +10,13 @@
 //			menu.slideToggle();
 			
 			if(menu.is(":hidden")){
-				menu.slideDown(300, function(){
+				menu.stop().slideDown(300, function(){
 					menu.animate({
 						opacity:1,
 					});
 				});
 			}else {
-				menu.animate({
+				menu.stop().animate({
 					opacity:0,
 				}).slideUp();
 				
@@ -24,7 +24,7 @@
 			
 		});
 		
-		
+		 
 		
 		
 
